@@ -1,0 +1,6 @@
+#!/usr/bin/env php
+<?php
+
+require_once getcwd().DIRECTORY_SEPARATOR .'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+$aerius = new \Paerius\Paerius(getcwd());
+$aerius->build($argv[1] ?? null);

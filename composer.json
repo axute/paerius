@@ -1,0 +1,33 @@
+{
+    "name": "axute/paerius",
+    "description": "Bundles your vendor directory into a PHP Archive (PHAR)",
+    "version": "0.9",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "axute",
+            "email": "axutes@gmail.com"
+        }
+    ],
+    "keywords": [
+        "composer",
+        "phar",
+        "vendor"
+    ],
+    "suggest": {
+        "ext-bzip2": "*",
+        "ext-gz": "*"
+    },
+    "homepage": "https://github.com/axute/paerius",
+    "require": {
+        "php": ">=7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paerius\\": "src"
+        }
+    },
+    "bin": [
+        "bin/paerius"
+    ]
+}
